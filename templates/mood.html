@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main_font{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: whitesmoke;
+                text-shadow: -1px -1px 0 black;
+
+                text-align: center;
+            }
+            .mood_selector{
+                display: inline-block;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="main_font">
+            Welcome to the mood page
+        </h1>
+        <div class="mood_selector">
+            <h3>Your mood:</h3>
+            <!-- wanna create a drop down menu with moods -->
+        </div>
+        <div class="mood_selector">
+            <label for="moods">I'm...</label>
+            <select name="moods" id="moods">
+                <option value="">--choose a mood--</option>
+                <option value="happy">Happy</option>
+                <option value="conflicted">Conflicted</option>
+                <option value="angry">Angry</option>
+            </select>
+        </div>
+        <!-- later: use api to get customary user moods -->
+    </body>
+</html>

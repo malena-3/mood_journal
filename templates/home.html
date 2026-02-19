@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main_font{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: whitesmoke;
+                text-shadow: -1px -1px 0 black;
+
+                text-align: center;
+                }
+            .new_entry_button{
+                border: solid grey 2px;
+                background-color: lightblue;
+
+                border-radius: 1em;
+                margin: 0px 110px 0px 110px;
+
+                height: 100px;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-size: 25px;
+                
+                }
+        </style>
+    </head>
+    <body>
+        <h1 class="main_font">
+            Welcome To Your Mood Journal
+        </h1>
+            <a href="{{url_for('mood')}}" class="new_entry_button">
+                new entry
+            </a>
+     
+    </body>
+</html>
