@@ -11,7 +11,7 @@
             }
             .mood_selector{
                 display: inline-block;
-                padding: 5px;
+                padding: 10px;
             }
         </style>
     </head>
@@ -24,13 +24,17 @@
             <!-- wanna create a drop down menu with moods -->
         </div>
         <div class="mood_selector">
-            <label for="moods">I'm...</label>
-            <select name="moods" id="moods">
-                <option value="">--choose a mood--</option>
-                <option value="happy">Happy</option>
-                <option value="conflicted">Conflicted</option>
-                <option value="angry">Angry</option>
-            </select>
+            <label for="moods"></label>
+            <form method="POST" action="/submit_selection">
+                <select name="moods" id="moods">
+                    <option value="">--choose a mood--</option>
+                    <option value="happy">Happy</option>
+                    <option value="conflicted">Conflicted</option>
+                    <option value="angry">Angry</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+            
         </div>
         <!-- later: use api to get customary user moods -->
     </body>
