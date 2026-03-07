@@ -13,5 +13,4 @@ def submit_selection():
 
         # can now use the 'selected_value' in your Python logic
         print("selected value:", selected_value)
-        # return f"The selected value is: {selected_value}"
         return render_template("new_mood.html", mood=selected_value)
