@@ -9,18 +9,31 @@
 
                 text-align: center;
                 }
+            .landing_buttons{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
         </style>
 
     </head>
     <body>
         <h1 class="main_font">
-            Welcome To Your Mood Journal
+            The Mood Journal
         </h1>
-        <a href="{{url_for('login')}}">
-            <button>
-                Login
-            </button>
-        </a>
+        <div class="landing_buttons">
+            <a href="{{url_for('login')}}">
+                <button>
+                    Login
+                </button>
+            </a>
+            <a href="{{url_for('register')}}">
+                <button>
+                    Register
+                </button>
+    
+            </a>
+        </div>
         
     </body>
 </html>
